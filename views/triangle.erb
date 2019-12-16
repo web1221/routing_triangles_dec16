@@ -1,0 +1,23 @@
+<h1>Is it a Triangle? Lets Find OUT!</h1>
+
+<form action="/triangle" method="post">
+    <label>
+        Side 1:
+        <input id="search" name="s1" class="form-control" type="number">
+    </label>
+    <label>
+        Side 2:
+        <input id="search" name="s2" class="form-control" type="number">
+    </label>
+    <label>
+        Side 3:
+        <input id="search" name="s3" class="form-control" type="number">
+    </label>
+    <button type="submit" class="btn">Go!</button>
+</form>
+
+<div>
+    <% if @triangle.sides != [0, 0, 0] %>
+    <p>This is a(n) <%= @triangle.type %> triangle.</p>
+    <% end %>
+</div
