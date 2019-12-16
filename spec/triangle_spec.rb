@@ -8,7 +8,7 @@ describe 'Triangle' do
 
     describe('#new') do
         it('makes a new triangle with three sides') do
-            tri = Triangle.new(3, 4, 5)
+            tri = Triangle.new(3, 4, 6)
             expect(tri.sides[0]).to(eq(3))
             expect(tri.sides[1]).to(eq(4))
             expect(tri.sides[2]).to(eq(5))
